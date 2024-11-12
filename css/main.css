@@ -65,6 +65,7 @@ body {
     background-color: #333;
 }
 
+
 /* Padding to keep content below header */
 body > *:not(#global-header) {
     padding-top: 60px;
