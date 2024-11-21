@@ -71,3 +71,86 @@ body > *:not(#global-header) {
     padding-top: 60px;
 }
 
+/* not working overriden by the slick carousel */
+.pic-carousel{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .carousel-wrapper{
+    /* max-width: 400px; 
+} */
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Adjust the position of the arrows */
+.slick-prev {
+    left: 10px; /* Moves the left arrow inside */
+}
+
+.slick-next {
+    right: 10px; /* Keeps the right arrow within the container */
+}
+
+.slick-slide img{
+
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* About Page formatting for text and content */
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.profile-items {
+    display: flex; /* Use flexbox to align title and text side by side */
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    flex: 0 0 150px; /* Fix the width of the title */
+    margin-right: 15px; /* Add space between title and text */
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Seperate section of about page */
+
+
+.skill-boxes{
+    max-width: 800px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 3rem;
+}
+
+.skills1, .skills2, .skills3 {
+    border: 2px solid #333; /* Black border */
+    padding: 6px; /* Add spacing inside the box */
+    margin: 6px 0; /* Add space between boxes */
+    border-radius: 5px; /* Rounded corners */
+    color: #f9f4f1;
+    background-color: #000000; /* Optional: light background color */
+    display: inline-block; /* Makes boxes shrink to their content */
+    text-align: center; /* Centers the text within the box */
+    width: 100px; /* Set a consistent width */
+}
