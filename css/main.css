@@ -154,3 +154,32 @@ body > *:not(#global-header) {
     text-align: center; /* Centers the text within the box */
     width: 100px; /* Set a consistent width */
 }
+
+.socialMedia a {
+    color: var(--tertiary);
+    margin: 0 1rem;
+    transition: transform .25s;
+    padding: 20px
+}
+
+.socialMedia a:hover {
+    transform: translateY(-2px);
+    color: var(--secondary)
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socialMedia ion-icon {
+    font-size: 32px;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+.socialMedia ion-icon:hover {
+    color: #0073e6;
+}
