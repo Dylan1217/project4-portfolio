@@ -97,7 +97,7 @@ body > *:not(#global-header) {
   .visit-page-button {
     display: inline-block;
     text-decoration: none;
-    background-color: #007BFF;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
@@ -108,7 +108,7 @@ body > *:not(#global-header) {
   }
   
   .visit-page-button:hover {
-    background-color: #0056b3;
+    background-color: rgb(91, 6, 91);
   }
 
 
