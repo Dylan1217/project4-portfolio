@@ -123,6 +123,19 @@ body>*:not(#global-header) {
     /* Optional: Set a color for the header text */
 }
 
+.project-pic {
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    /* Ensures content inside respects the rounded edges */
+    border-radius: 20px;
+    /* Adjust the value for the desired roundness */
+    border: 3px solid #000;
+    /* Optional: Adds a border for visibility */
+}
+
 /* Button Functionality for the project carousels */
 .button-container {
     text-align: center;
@@ -590,6 +603,125 @@ textarea {
 }
 
 .project1-gallery img:hover {
-    transform: scale(1.1);
+    transform: scale(1.25);
     /* Optional: Slight zoom on hover */
+}
+
+.p1-carousel-wrapper {
+    display: flex;
+    background-color: #f3f3f3;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 40%;
+    /* Keeps the wrapper smaller */
+    margin: auto;
+    overflow: hidden;
+    /* Hides overflowing content */
+}
+
+.p1-pic-carousel {
+    width: 100%;
+    /* Makes the carousel container fill the wrapper */
+    max-width: 800px;
+    /* You can set this to a larger value to make the carousel content bigger */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #000;
+}
+
+.carousel-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* Space out the carousel and text */
+    align-items: flex-start;
+    /* Align both elements to the top */
+    gap: 20px;
+    /* Optional: space between carousel and text */
+    width: 80%;
+    /* Adjust width of the wrapper */
+    margin: auto;
+    /* Center the wrapper */
+}
+
+/* PROJECT 2 STYLING */
+.atlas-wrapper {
+    display: flex;
+    height: 100vh;
+    /* Full height of the viewport */
+    align-items: stretch;
+    /* Ensures children stretch to match the parent's height */
+}
+
+.atlas-img {
+    width: 45%;
+    /* Left section width */
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+    background-color: #f5f5f5;
+    /* Optional: Background color for distinction */
+    padding-left: 50px;
+    /* Added space between the left side of the screen and the image */
+}
+
+.atlas-img img {
+    width: 80%;
+    /* Makes the image fill its parent container (with some space) */
+    max-width: 500px;
+    /* Ensures the image doesn't grow too large */
+    height: auto;
+    /* Maintains the aspect ratio */
+    border: 5px solid #000;
+    /* Black border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.5);
+    /* Shadow */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for the transform */
+}
+
+.atlas-img img:hover {
+    transform: scale(1.1);
+    /* Scales the image to 110% of its original size */
+}
+
+.galactic-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align text to top to make it look more natural */
+    flex-direction: column;
+    /* Allow text to stack vertically */
+    padding-left: 10px;
+    /* Add space between the image and the text */
+    width: 35%;
+    /* Ensure the text section is given some width */
+}
+
+.p1-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 75px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.p1-text {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 80%;
+    /* Ensure text does not span too wide */
+    width: 100%;
+    /* Allow text to wrap */
+    margin-top: 10px;
+    /* Add some spacing between title and text */
 }

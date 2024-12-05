@@ -14,12 +14,35 @@
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/main.css">
-
     <meta name="theme-color" content="#fafafa">
+
+    <style>
+        /* Flexbox container for carousels */
+        .carousel-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .carousel-wrapper {
+            flex: 1 1 calc(50% - 20px);
+            /* 2 carousels per row */
+            min-width: 300px;
+            /* Responsive breakpoints */
+        }
+
+        .pic-carousel img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 
@@ -38,16 +61,57 @@
         </div>
     </header>
 
-    <div class="project1-gallery">
-        <img src="./img/gato.jpg" alt="Image 1">
-        <img src="./img/gato.jpg" alt="Image 2">
-        <img src="./img/gato.jpg" alt="Image 3">
-        <img src="./img/gato.jpg" alt="Image 4">
-        <img src="./img/gato.jpg" alt="Image 5">
-        <img src="./img/gato.jpg" alt="Image 6">
-        <img src="./img/gato.jpg" alt="Image 7">
-        <img src="./img/gato.jpg" alt="Image 8">
+
+
+    <div class="carousel-text-wrapper">
+        <div class="p1-carousel-wrapper"> <!--carousel-wrapper-->
+            <div class="p1-pic-carousel"> <!--"pic-carousel-->
+
+                <img src="./img/ocean pattern 2/Project 4 (1).jpg" alt="Image 1">
+                <img src="./img/ocean pattern 2/Project 4 crab.jpg" alt="Image 2">
+                <img src="./img/ocean pattern 2/Project 4 lionfish.jpg" alt="Image 3">
+                <img src="./img/ocean pattern 2/Project 4 Nemos.jpg" alt="Image 4">
+                <img src="./img/ocean pattern 2/Project 4 octopus.jpg" alt="Image 5">
+                <img src="./img/ocean pattern 2/Project 4 SeaTurtle.jpg" alt="Image 6">
+                <img src="./img/ocean pattern 2/Project 4 shark.jpg" alt="Image 7">
+                <img src="./img/ocean pattern 2/Project 4 Shells (1).jpg" alt="Image 8">
+                <img src="./img/ocean pattern 2/Project 4 Starfish.jpg" alt="Image 9">
+                <img src="./img/ocean pattern 2/Project 4 Walrus Polar Bear.jpg" alt="Image 10">
+
+            </div>
+        </div>
+
+        <div class="galactic-text-wrapper"> <!--about-me-content about-me-content-animate-->
+            <div class="galactic-items"> <!--profile-items-->
+                <h1 class="p1-title">Ocean Pattern Designs</h1>
+                <p class="p1-text">This project, created in Adobe Photoshop, showcases the creative use of layers and
+                    advanced color adjustment tools. Through precise layering, the design achieves depth and dimension,
+                    while tools like Hue/Saturation and Color Balance bring dynamic contrasts
+                    to life. The project highlights Photoshop's versatility in crafting visually engaging and
+                    professional-quality graphics.</p>
+            </div>
+        </div>
     </div>
 
+    <div class="p1-wrapper">
+        <div class="project1-gallery">
+            <img src="./img/ocean pattern 2/Project 4 (1).jpg" alt="Image 1">
+            <img src="./img/ocean pattern 2/Project 4 crab.jpg" alt="Image 2">
+            <img src="./img/ocean pattern 2/Project 4 lionfish.jpg" alt="Image 3">
+            <img src="./img/ocean pattern 2/Project 4 Nemos.jpg" alt="Image 4">
+            <img src="./img/ocean pattern 2/Project 4 octopus.jpg" alt="Image 5">
+            <img src="./img/ocean pattern 2/Project 4 SeaTurtle.jpg" alt="Image 6">
+            <img src="./img/ocean pattern 2/Project 4 shark.jpg" alt="Image 7">
+            <img src="./img/ocean pattern 2/Project 4 Shells (1).jpg" alt="Image 8">
+            <img src="./img/ocean pattern 2/Project 4 Starfish.jpg" alt="Image 9">
+            <img src="./img/ocean pattern 2/Project 4 Walrus Polar Bear.jpg" alt="Image 10">
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
