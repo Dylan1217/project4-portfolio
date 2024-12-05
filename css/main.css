@@ -145,19 +145,19 @@ body>*:not(#global-header) {
 
 /* Button Functionality for the project carousels */
 .button-container {
-    text-align: center;
-    margin-top: 35px;
-    /* Spacing above the link button */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin-top: 10px; /* Adjust this value to move the button higher */
 }
 
 .visit-page-button {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-
     color: rgb(0, 0, 0);
     border: 3px solid #000000;
-    padding: 6px;
+    padding: 6px 12px; /* Adjust padding for better sizing */
     border-radius: 10px;
     text-decoration: none;
     background-color: white;
@@ -165,23 +165,36 @@ body>*:not(#global-header) {
     transition: background-color 0.3s ease;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .button-container {
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+    }
+    
+    .visit-page-button {
+        font-size: 16px; /* Smaller font size */
+        padding: 5px 10px; /* Adjust padding */
+        width: 90%; /* Button takes most of the screen width */
+        max-width: 300px; /* Restrict max width */
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
+
 .visit-page-button:hover {
     background-color: rgb(91, 6, 91);
     color: white;
 }
 
+/* Default styles (for larger screens) */
 .hero-content {
     text-align: center;
-    margin-top: 100vh;
-    /* Center the content vertically */
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-    /* Adjust to center content */
     gap: 20px;
-    /* Space between DYLAN and COLE */
 }
 
 .hero-title {
@@ -192,15 +205,11 @@ body>*:not(#global-header) {
 
 .hero-title-dylan,
 .hero-title-cole {
-    font-size: 10rem;
-    /* Make the text very large */
+    font-size: 10rem; /* Large text by default */
     color: #000;
     font-family: dugas-ultra;
     font-weight: 1000;
-    transform: scaleY(2.8);
-    /* Stretch the text vertically by 1.5x */
-    /* display: inline-block; */
-    /* Ensures the transform scales the text only */
+    transform: scaleY(2.8); /* Vertically stretched */
 }
 
 .hero-title-cole {
@@ -209,21 +218,16 @@ body>*:not(#global-header) {
 
 .hero-title-portfolio {
     font-size: 8rem;
-    /* Make the text very large */
     color: #000;
     font-family: dugas-ultra;
     font-weight: 1000;
-    transform: scaleY(2.8);
-    /* Stretch the text vertically by 1.5x */
-    /* display: inline-block; */
-    /* Ensures the transform scales the text only */
+    transform: scaleY(2.8); /* Vertically stretched */
 }
 
 .hero-title-dylan {
     margin-top: -120px;
     margin-bottom: 145px;
     margin-left: -1100px;
-    /* Adjust spacing between DYLAN and COLE */
 }
 
 .hero-title-cole {
@@ -233,9 +237,36 @@ body>*:not(#global-header) {
 }
 
 .hero-title-portfolio {
-    /* margin-top: 300px; */
     margin-right: -800px;
 }
+
+/* Aspect ratio media query for smaller screens (e.g., 16:9) */
+@media (max-aspect-ratio: 16/9) {
+    .hero-title-dylan,
+    .hero-title-cole,
+    .hero-title-portfolio {
+        font-size: 5rem; /* Shrink font size */
+        transform: scaleY(1.5); /* Reduce vertical stretch */
+    }
+
+    .hero-title-dylan {
+        margin-top: -60px; /* Adjust spacing */
+        margin-bottom: 75px;
+        margin-left: -200px; /* Center horizontally */
+    }
+
+    .hero-title-cole {
+        margin-bottom: 60px;
+        margin-right: 150px; /* Center horizontally */
+    }
+
+    .hero-title-portfolio {
+        margin-right: -400px; /* Center horizontally */
+    }
+}
+
+
+
 
 
 .slick-prev,
