@@ -67,34 +67,39 @@ body {
 
 
 /* Padding to keep content below header */
-body > *:not(#global-header) {
+body>*:not(#global-header) {
     padding-top: 60px;
 }
 
 /* not working overriden by the slick carousel */
-.pic-carousel{
+.pic-carousel {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .carousel-header {
-    text-align: center; /* Centers the text horizontally */
-    margin-bottom: 10px; /* Adds spacing between the header and the carousel */
-  }
-  
-  .carousel-header h2 {
-    font-size: 1.5rem; /* Adjust the font size as needed */
-    color: #333; /* Optional: Set a color for the header text */
-  }
-
-  /* Button Functionality for the project carousels */
-  .button-container {
     text-align: center;
-    margin-top: 10px; /* Spacing above the link button */
-  }
-  
-  .visit-page-button {
+    /* Centers the text horizontally */
+    margin-bottom: 10px;
+    /* Adds spacing between the header and the carousel */
+}
+
+.carousel-header h2 {
+    font-size: 1.5rem;
+    /* Adjust the font size as needed */
+    color: #333;
+    /* Optional: Set a color for the header text */
+}
+
+/* Button Functionality for the project carousels */
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+    /* Spacing above the link button */
+}
+
+.visit-page-button {
     display: inline-block;
     text-decoration: none;
     background-color: black;
@@ -105,11 +110,11 @@ body > *:not(#global-header) {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .visit-page-button:hover {
+}
+
+.visit-page-button:hover {
     background-color: rgb(91, 6, 91);
-  }
+}
 
 
 
@@ -117,7 +122,8 @@ body > *:not(#global-header) {
     /* max-width: 400px; 
 } */
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -126,14 +132,16 @@ body > *:not(#global-header) {
 
 /* Adjust the position of the arrows */
 .slick-prev {
-    left: 10px; /* Moves the left arrow inside */
+    left: 10px;
+    /* Moves the left arrow inside */
 }
 
 .slick-next {
-    right: 10px; /* Keeps the right arrow within the container */
+    right: 10px;
+    /* Keeps the right arrow within the container */
 }
 
-.slick-slide img{
+.slick-slide img {
 
     padding: 0 20px;
     width: 100%;
@@ -141,23 +149,76 @@ body > *:not(#global-header) {
 
 /* About Page formatting for text and content */
 .profile {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+    display: flex;
+    height: 100vh;
+    /* Full height of the viewport */
+    align-items: stretch;
+    /* Ensures children stretch to match the parent's height */
 }
 
-.profile-items {
-    display: flex; /* Use flexbox to align title and text side by side */
-    align-items: flex-start; /* Align items to the top */
-    margin-bottom: 20px;
+.about-me {
+    width: 45%;
+    /* Left section width */
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+    background-color: #f5f5f5;
+    /* Optional: Background color for distinction */
 }
+
+.about-me img {
+    width: 350px;
+    /* Image size */
+    height: auto;
+
+    /* Maintains aspect ratio */
+    border: 5px solid #000;
+    /* Black border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Shadow */
+}
+
+.about-me-content {
+    width: 65%;
+    /* Remaining width for the right section */
+    padding: 20px;
+    /* Adjust spacing inside */
+    overflow-y: auto;
+    /* Makes the content scrollable if it overflows */
+    display: flex;
+    flex-direction: column;
+    /* Ensures inner content stacks vertically */
+}
+
+
+
+
+.profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* 
+.profile-items {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+} */
+
 
 .title {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
     color: #000;
-    flex: 0 0 150px; /* Fix the width of the title */
-    margin-right: 15px; /* Add space between title and text */
+    flex: 0 0 auto;
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .text {
@@ -169,7 +230,7 @@ body > *:not(#global-header) {
 /* Seperate section of about page */
 
 
-.skill-boxes{
+.skill-boxes {
     max-width: 800px;
     display: flex;
     margin: 0 auto;
@@ -178,18 +239,56 @@ body > *:not(#global-header) {
     padding: 0 3rem;
 }
 
-.skills1, .skills2, .skills3 {
-    border: 2px solid #333; /* Black border */
-    padding: 6px; /* Add spacing inside the box */
-    margin: 6px 0; /* Add space between boxes */
-    border-radius: 5px; /* Rounded corners */
+.skills1,
+.skills2,
+.skills3 {
+    border: 1px solid #333;
+    /* Black border */
+    padding: 3px;
+    /* Add spacing inside the box */
+    margin: 6px 0;
+    /* Add space between boxes */
+    border-radius: 5px;
+    /* Rounded corners */
     color: #f9f4f1;
-    background-color: #000000; /* Optional: light background color */
-    display: inline-block; /* Makes boxes shrink to their content */
-    text-align: center; /* Centers the text within the box */
-    width: 100px; /* Set a consistent width */
+    background-color: #000000;
+    /* Optional: light background color */
+    display: inline-block;
+    /* Makes boxes shrink to their content */
+    text-align: center;
+    /* Centers the text within the box */
+    width: 100px;
+    /* Set a consistent width */
 }
 
+.resume-download {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.resume-download a {
+    color: black;
+    border: 3px solid #333;
+    padding: 6px;
+    border-radius: 5px;
+    /* Change the text color to black */
+}
+
+.resume-download a:hover {
+    color: rgb(91, 6, 91);
+    /* Optional: Add a hover effect, e.g., change color to gray */
+}
+
+
+
+
+/* Contact Page CSS */
 .socialMedia a {
     color: var(--tertiary);
     margin: 0 1rem;
@@ -217,4 +316,105 @@ body > *:not(#global-header) {
 
 .socialMedia ion-icon:hover {
     color: #0073e6;
+}
+
+.contact-icon {
+    display: block;
+    width: 100px;
+}
+
+
+/* Contact Page Contact Form */
+.contact-form-wrapper {
+    max-width: 450px;
+    width: 100%;
+    padding: 80px 40px;
+    margin-top: 45px;
+    margin-bottom: -30px;
+    /* Add horizontal padding for even spacing */
+    border: 2px solid #000;
+    /* Black border for bold contrast */
+    border-radius: 8px;
+    /* Subtle rounded corners */
+    /* background-color: #fff; */
+    /* White background */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* Match font */
+    color: #000;
+    /* Black text */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* Ensure inputs span the container with padding */
+    padding: 10px;
+    border: 2px solid #000;
+    /* Black border for inputs */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    /* Black text */
+    background-color: #f4f4f4;
+    /* Slightly off-white background */
+    outline: none;
+    resize: none;
+    margin: 0;
+    /* Reset margin for alignment */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+    box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
+    /* Inset shadow for depth */
+}
+
+textarea {
+    height: 100px;
+    /* Fixed height for textarea */
+}
+
+.contact-send-wrapper {
+    text-align: center;
+}
+
+.contact-form button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* Match font */
+    font-size: 18px;
+    background-color: #fff;
+    /* White background */
+    color: #000;
+    /* Black text */
+    border: 2px solid #000;
+    /* Black border */
+    padding: 10px 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+    /* Black background on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+
+    flex-direction: column;
 }
