@@ -71,11 +71,40 @@ body>*:not(#global-header) {
     padding-top: 60px;
 }
 
+
+
+.carousel-wrapper {
+    display: flex;
+    background-color: #f3f3f3;
+    /* Change to your desired background color */
+    border: 3px solid #000;
+    /* Adds a border */
+    border-radius: 20px;
+    /* Rounds the edges */
+    padding: 20px;
+    /* Adds spacing inside the wrapper */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a subtle shadow */
+    max-width: 70%;
+    /* Ensures it doesn't stretch too much */
+    margin: auto;
+    /* Centers the carousel */
+    overflow: hidden;
+    /* Hides overflowing content */
+}
+
+
 /* not working overriden by the slick carousel */
 .pic-carousel {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+    /* Ensures content inside respects the rounded edges */
+    border-radius: 20px;
+    /* Adjust the value for the desired roundness */
+    border: 3px solid #000;
+    /* Optional: Adds a border for visibility */
 }
 
 .carousel-header {
@@ -86,7 +115,9 @@ body>*:not(#global-header) {
 }
 
 .carousel-header h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     /* Adjust the font size as needed */
     color: #333;
     /* Optional: Set a color for the header text */
@@ -95,25 +126,28 @@ body>*:not(#global-header) {
 /* Button Functionality for the project carousels */
 .button-container {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 35px;
     /* Spacing above the link button */
 }
 
 .visit-page-button {
-    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+    color: rgb(0, 0, 0);
+    border: 3px solid #000000;
+    padding: 6px;
+    border-radius: 10px;
     text-decoration: none;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
+    background-color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .visit-page-button:hover {
     background-color: rgb(91, 6, 91);
+    color: white;
 }
 
 .hero-content {
@@ -183,13 +217,6 @@ body>*:not(#global-header) {
     margin-right: -800px;
 }
 
-
-
-
-
-/* .carousel-wrapper{
-    /* max-width: 400px; 
-} */
 
 .slick-prev,
 .slick-next {
@@ -395,7 +422,7 @@ body>*:not(#global-header) {
 
 /* Contact Page Contact Form */
 .contact-form-wrapper {
-    max-width: 450px;
+    max-width: 400px;
     width: 100%;
     padding: 80px 40px;
     margin-top: 45px;
@@ -530,4 +557,39 @@ textarea {
     z-index: 1;
     /* Ensures content stays above the gradient */
     text-align: center;
+}
+
+/* PROJECT 1 PAGE */
+.project1-gallery {
+    display: flex;
+    /* Enables Flexbox layout */
+    justify-content: space-evenly;
+    /* Evenly spaces the images */
+    align-items: center;
+    /* Centers the images vertically */
+    margin-top: 20px;
+    /* Adds spacing at the top */
+    padding: 10px;
+    flex-wrap: wrap;
+    /* Allows wrapping if the screen is too small */
+    gap: 15px;
+    /* Adds consistent spacing between images */
+}
+
+.project1-gallery img {
+    width: 150px;
+    /* Set a consistent width for the images */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    transition: transform 0.3s ease;
+    /* Optional: Smooth animation on hover */
+}
+
+.project1-gallery img:hover {
+    transform: scale(1.1);
+    /* Optional: Slight zoom on hover */
 }
