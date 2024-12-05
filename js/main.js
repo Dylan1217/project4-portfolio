@@ -37,3 +37,14 @@ $(document).ready(function () {
     centerMode: true         // Center the active slide
   });
 });
+
+$(document).ready(function () {
+  $('.p3-pic-carousel').slick({
+    slidesToShow: 1,         // Number of slides visible at once
+    slidesToScroll: 1,       // Number of slides to scroll at a time
+    autoplay: true,          // Enable auto-sliding
+    autoplaySpeed: 2200,     // Time between slides
+    dots: true,              // Show navigation dots
+    centerMode: true         // Center the active slide
+  });
+});

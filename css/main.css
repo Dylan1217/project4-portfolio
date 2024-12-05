@@ -136,6 +136,13 @@ body>*:not(#global-header) {
     /* Optional: Adds a border for visibility */
 }
 
+.projects-spaceship {
+    width: 100%;
+    /* Makes the image take up the full width of its container */
+    height: auto;
+    /* Ensures the image maintains its aspect ratio */
+}
+
 /* Button Functionality for the project carousels */
 .button-container {
     text-align: center;
@@ -724,4 +731,80 @@ textarea {
     /* Allow text to wrap */
     margin-top: 10px;
     /* Add some spacing between title and text */
+}
+
+/* Project 3 Styling */
+
+.p3-carousel-wrapper {
+    display: flex;
+    background-color: #f3f3f3;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 40%;
+    /* Keeps the wrapper smaller */
+    margin: auto;
+    overflow: hidden;
+    /* Hides overflowing content */
+}
+
+.p3-pic-carousel {
+    width: 100%;
+    /* Makes the carousel container fill the wrapper */
+    max-width: 800px;
+    /* You can set this to a larger value to make the carousel content bigger */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #000;
+}
+
+.carousel-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* Space out the carousel and text */
+    align-items: flex-start;
+    /* Align both elements to the top */
+    gap: 20px;
+    /* Optional: space between carousel and text */
+    width: 100%;
+    /* Adjust width of the wrapper */
+    margin: auto;
+    /* Center the wrapper */
+}
+
+.project3-gallery {
+    display: flex;
+    /* Enables Flexbox layout */
+    justify-content: space-evenly;
+    /* Evenly spaces the images */
+    align-items: center;
+    /* Centers the images vertically */
+    margin-top: 80px;
+    /* Adds spacing at the top */
+    padding: 10px;
+    flex-wrap: wrap;
+    /* Allows wrapping if the screen is too small */
+    gap: 55px;
+    /* Adds consistent spacing between images */
+}
+
+.project3-gallery img {
+    width: 220px;
+    /* Set a consistent width for the images */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    transition: transform 0.3s ease;
+    /* Optional: Smooth animation on hover */
+}
+
+.project3-gallery img:hover {
+    transform: scale(1.5);
+    /* Optional: Slight zoom on hover */
 }
