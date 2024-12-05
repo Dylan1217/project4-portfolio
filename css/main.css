@@ -78,6 +78,41 @@ body > *:not(#global-header) {
     margin-right: auto;
 }
 
+.carousel-header {
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 10px; /* Adds spacing between the header and the carousel */
+  }
+  
+  .carousel-header h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #333; /* Optional: Set a color for the header text */
+  }
+
+  /* Button Functionality for the project carousels */
+  .button-container {
+    text-align: center;
+    margin-top: 10px; /* Spacing above the link button */
+  }
+  
+  .visit-page-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .visit-page-button:hover {
+    background-color: #0056b3;
+  }
+
+
+
 /* .carousel-wrapper{
     /* max-width: 400px; 
 } */

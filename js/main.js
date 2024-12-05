@@ -20,7 +20,7 @@ const navLinks = document.querySelectorAll('.nav-links a');
     $('.pic-carousel').slick({
         slidesToShow: 1,         // Number of slides visible at once
         slidesToScroll: 1,       // Number of slides to scroll at a time
-        autoplay: true,          // Enable auto-sliding
+        autoplay: false,          // Enable auto-sliding
         autoplaySpeed: 2000,     // Time between slides
         dots: true,              // Show navigation dots
         centerMode: true         // Center the active slide
