@@ -116,6 +116,75 @@ body>*:not(#global-header) {
     background-color: rgb(91, 6, 91);
 }
 
+.hero-content {
+    text-align: center;
+    margin-top: 100vh;
+    /* Center the content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    /* Adjust to center content */
+    gap: 20px;
+    /* Space between DYLAN and COLE */
+}
+
+.hero-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.hero-title-dylan,
+.hero-title-cole {
+    font-size: 10rem;
+    /* Make the text very large */
+    color: #000;
+    font-family: dugas-ultra;
+    font-weight: 1000;
+    transform: scaleY(2.8);
+    /* Stretch the text vertically by 1.5x */
+    /* display: inline-block; */
+    /* Ensures the transform scales the text only */
+}
+
+.hero-title-cole {
+    font-size: 9rem;
+}
+
+.hero-title-portfolio {
+    font-size: 8rem;
+    /* Make the text very large */
+    color: #000;
+    font-family: dugas-ultra;
+    font-weight: 1000;
+    transform: scaleY(2.8);
+    /* Stretch the text vertically by 1.5x */
+    /* display: inline-block; */
+    /* Ensures the transform scales the text only */
+}
+
+.hero-title-dylan {
+    margin-top: -120px;
+    margin-bottom: 145px;
+    margin-left: -1100px;
+    /* Adjust spacing between DYLAN and COLE */
+}
+
+.hero-title-cole {
+    margin-top: 0;
+    margin-bottom: 120px;
+    margin-right: 300px;
+}
+
+.hero-title-portfolio {
+    /* margin-top: 300px; */
+    margin-right: -800px;
+}
+
+
+
 
 
 /* .carousel-wrapper{
@@ -417,4 +486,48 @@ textarea {
     min-height: 100vh;
 
     flex-direction: column;
+}
+
+
+
+/* HOME PAGE */
+.hero {
+    position: relative;
+    height: 100vh;
+    /* Full-screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Ensures the gradient stays within bounds */
+}
+
+.hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, #ffffff, #7107d4); */
+    background: linear-gradient(to bottom, #000000, #ba2de6);
+    mask-image: radial-gradient(circle, rgb(255, 0, 0) 1%, rgba(176, 24, 236, 0) 60%);
+    mask-size: 10px 10px;
+    /* Adjust the dot size */
+    mask-repeat: repeat;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0) 60%);
+    -webkit-mask-size: 10px 10px;
+    -webkit-mask-repeat: repeat;
+    clip-path: polygon(0 0, 25% 0, 50% 50%, 75% 0, 100% 0,
+            100% 25%, 50% 50%, 100% 75%, 100% 100%,
+            75% 100%, 50% 50%, 25% 100%, 0 100%,
+            0 75%, 50% 50%, 0 25%);
+    z-index: -1;
+    /* Places the gradient behind content */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    /* Ensures content stays above the gradient */
+    text-align: center;
 }
